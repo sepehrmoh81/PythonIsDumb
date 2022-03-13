@@ -7,11 +7,11 @@ for i in range(usersCount):
     listUsers.append(mDict)
 
 searchName = str(input("Enter search value: "))
-a = False
+found = False
 for x in listUsers:
     if searchName == x['name']:
         print("Found Em! " + searchName + " is " + str(x['age']) + " years old!")
-        a = True
+        found = True
 
-if a != True:
+if found == False:
     print("No such value found!")
